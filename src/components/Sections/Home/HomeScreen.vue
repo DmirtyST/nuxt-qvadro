@@ -66,7 +66,6 @@
       height: 70rem;
       padding-top: 12rem;
       position: relative;
-      background-color: red;
     }
 
     &_item {
