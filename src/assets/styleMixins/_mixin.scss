@@ -1,0 +1,30 @@
+$sizes: ("xs":320px, "sm":640px, "md":768px, "lg":1024px, "xl":1280px,"xxl":1536);
+
+  @mixin media($minmax, $media) {
+    @each $size, $resolution in $sizes {
+      @if $media == $size {
+        @media only screen and (#{$minmax}-width: $resolution) {
+          @content;
+        }
+      }
+    }
+  }
+  
+  @mixin flex($flex-direction:row,$justify-content:'',$align-items:''){
+    display: flex;
+    flex-direction:$flex-direction;
+    justify-content:$justify-content;
+    align-items:$align-items;
+    @content;
+  }
+  @mixin font ($font-size:'',$line-height:'',$letter-spacing:'',$font-weight:''){
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    letter-spacing:$letter-spacing;
+  }
+  @mixin size ($width:'',$height:''){
+   width: $width;
+   height: $height;
+  }
+  

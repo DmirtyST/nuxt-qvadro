@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: calc(100vw / 1460 * 9.52);
+  @include media('max','md'){
+    font-size: calc(100vw / 768 * 9.52);
+  }
+  @include media('max','sm'){
+    font-size: calc(100vw / 375 * 9.52);
+  }
+}
+body {
+    text-rendering: optimizeSpeed;
+  }
+  
+img {
+    max-width: 100%;
+    display: block;
+  }
+a{
+    text-decoration: none;
+  
+    
+}
+ul,ol{
+list-style: none;
+}
+
+textarea{
+    resize: none;
+}
+
+button,input,textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
