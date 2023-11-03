@@ -57,11 +57,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-  .item {
-    width: 10rem;
-    height: 10rem;
-    background-color: red;
-  }
+  
   .home-screen {
     padding-top: 0rem;
 
@@ -70,6 +66,7 @@
       height: 70rem;
       padding-top: 12rem;
       position: relative;
+      background-color: red;
     }
 
     &_item {
